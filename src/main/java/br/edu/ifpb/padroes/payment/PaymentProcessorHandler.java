@@ -3,7 +3,8 @@ package br.edu.ifpb.padroes.payment;
 import br.edu.ifpb.padroes.domain.Property;
 
 public interface PaymentProcessorHandler {
+    public static final PaymentProcessorHandler next = null;
 
-    public abstract void process(Property property);
+	abstract boolean process(Property p);
 
 }
